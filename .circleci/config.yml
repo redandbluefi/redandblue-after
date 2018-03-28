@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:9-browsers
+    branches:
+      only:
+        - master
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install
+      - run:
+          name: Build production version
+          command: npm run build
+      - run:
+          name: Run tests
+          command: npm test
