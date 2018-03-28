@@ -24,6 +24,11 @@ npm start
 npm test
 ```
 
+Project also includes Prettier, which automatically formats your code on each commit.
+You can also run it manually with `npm run prettify`.
+It is recommended that you also install Prettier plugin to your favourite editor.
+More details here: https://prettier.io/docs/en/editors.html
+
 ## How to run production build and server
 
 ```bash
