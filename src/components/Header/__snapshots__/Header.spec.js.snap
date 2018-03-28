@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Header correctly 1`] = `
+<div>
+  <div
+    className="sc-bdVaJa dWVnNZ"
+  >
+    <img
+      alt="logo"
+      className="Header-logo"
+      src="logo.svg"
+      style={
+        Object {
+          "height": "80px",
+        }
+      }
+    />
+    <h2>
+      Welcome to redandblue frontend starter
+    </h2>
+    <h3>
+      Implemented with Razzle + After.js
+    </h3>
+  </div>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    Home
+  </a>
+   -
+  <a
+    href="/about"
+    onClick={[Function]}
+  >
+    About
+  </a>
+   -
+  <a
+    href="/terms"
+    onClick={[Function]}
+  >
+    Terms
+  </a>
+</div>
+`;

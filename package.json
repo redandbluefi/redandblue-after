@@ -1,0 +1,26 @@
+{
+  "name": "redandblue-after",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "razzle start",
+    "build": "razzle build",
+    "test": "razzle test --env=jsdom",
+    "lint": "eslint -c .eslintrc src/",
+    "start:prod": "NODE_ENV=production node build/server.js"
+  },
+  "dependencies": {
+    "@jaredpalmer/after": "latest",
+    "express": "^4.16.2",
+    "razzle": "^0.8.14",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.2.2",
+    "styled-components": "^3.2.3"
+  },
+  "devDependencies": {
+    "jest-cli": "^22.4.3",
+    "react-test-renderer": "^16.2.0"
+  }
+}
