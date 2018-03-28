@@ -7,7 +7,8 @@
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
     "prettify": "prettier src/** --write",
-    "start:prod": "NODE_ENV=production node build/server.js"
+    "start:prod": "NODE_ENV=production node build/server.js",
+    "precommit": "pretty-quick --staged"
   },
   "dependencies": {
     "@jaredpalmer/after": "latest",
@@ -20,8 +21,10 @@
     "styled-components": "^3.2.3"
   },
   "devDependencies": {
+    "husky": "^0.14.3",
     "jest-cli": "^22.4.3",
     "prettier": "1.11.1",
+    "pretty-quick": "^1.4.1",
     "react-test-renderer": "^16.2.0"
   }
 }
