@@ -19,7 +19,7 @@ export default [
     exact: true,
     component: asyncComponent({
       loader: () => import('./pages/Terms'), // required
-      Placeholder: () => <div>...LOADING...</div>, // this is optional, just returns null by default
-    }),
-  },
+      Placeholder: () => <div>...LOADING...</div> // this is optional, just returns null by default
+    })
+  }
 ];

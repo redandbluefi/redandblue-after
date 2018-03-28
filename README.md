@@ -2,9 +2,12 @@
 
 This is a basic, bare-bones starter template.
 It has been kick-started with Razzle and After.js. It also includes
-styled-components, ESLint for linting and Jest for testing.
+styled-components, Prettier for code style and Jest for testing.
+Basically, all you'll need to build magnificent web application.
 
 Clone it, modify it and you have your own custom project with all the cool stuff.
+
+> :information_source: This project needs a nice name!
 
 ## How to use
 
