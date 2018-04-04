@@ -45,7 +45,13 @@ npm run start:prod
 [ ] AMP
 [ ] Progressive Web App (Service Worker)
 [ ] Internationalization & Localization
-[ ] HTTP/2
+[ ] Gzip + HTTP/2
+
+### TODO
+
+* Logging
+* Error handling
+* Deployment
 
 ## How to customize this setup
 
