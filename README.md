@@ -36,6 +36,17 @@ npm run build
 npm run start:prod
 ```
 
+## Features
+
+[x] Great developer experience
+[x] ES6, ES7, ES8...
+[x] Server-side rendering
+[x] Top-notch performance (bundling, tree shaking, critical CSS)
+[ ] AMP
+[ ] Progressive Web App (Service Worker)
+[ ] Internationalization & Localization
+[ ] HTTP/2
+
 ## How to customize this setup
 
 This setup is based on Razzle, which provides pre-configured everything.
