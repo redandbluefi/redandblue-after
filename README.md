@@ -38,20 +38,16 @@ npm run start:prod
 
 ## Features
 
-[x] Great developer experience
-[x] ES6, ES7, ES8...
-[x] Server-side rendering
-[x] Top-notch performance (bundling, tree shaking, critical CSS)
-[ ] AMP
-[ ] Progressive Web App (Service Worker)
-[ ] Internationalization & Localization
-[ ] Gzip + HTTP/2
-
-### TODO
-
-* Logging
-* Error handling
-* Deployment
+* [x] Great developer experience
+* [x] ES6, ES7, ES8...
+* [x] Server-side rendering
+* [x] Top-notch performance (bundling, tree shaking, critical CSS)
+* [-] gzip + HTTP/2
+* [ ] AMP
+* [ ] Progressive Web App (Service Worker)
+* [ ] Internationalization & Localization
+* [ ] Great logging and error handling
+* [ ] Easy deployment
 
 ## How to customize this setup
 

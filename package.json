@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@jaredpalmer/after": "latest",
+    "compression": "^1.7.2",
     "express": "^4.16.2",
     "razzle": "^0.8.14",
     "react": "^16.2.0",
