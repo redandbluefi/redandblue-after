@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "razzle start",
+    "prestart": "npm run build",
     "start": "NODE_ENV=production node build/server.js",
     "build": "razzle build",
     "test": "razzle test --env=jsdom --coverage",
@@ -15,7 +16,7 @@
     "compression": "^1.7.2",
     "express": "^4.16.2",
     "node-fetch": "^2.1.2",
-    "razzle": "^0.8.14",
+    "razzle": "^2.0.0-alpha.9",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",

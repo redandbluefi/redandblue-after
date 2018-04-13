@@ -15,8 +15,11 @@ Clone it, modify it and you have your own custom project with all the cool stuff
 git clone https://github.com/redandbluefi/redandblue-after.git <customer-folder>
 cd <customer-folder>
 npm install
-npm start
+npm run dev
 ```
+
+> You might get an error about build/assets.json. You can safely ignore this for now.
+> Razzle 2.0 is currently being developed and errors like this may occur.
 
 ## How to run tests
 
@@ -32,8 +35,7 @@ More details here: https://prettier.io/docs/en/editors.html
 ## How to run production build and server
 
 ```bash
-npm run build
-npm run start:prod
+npm run start
 ```
 
 ## Features
