@@ -14,7 +14,6 @@ export default class Document extends React.Component {
 
   render() {
     const { helmet, assets, data, styleTags } = this.props;
-    // get attributes from React Helmet
     const htmlAttrs = helmet.htmlAttributes.toComponent();
     const bodyAttrs = helmet.bodyAttributes.toComponent();
 
@@ -38,7 +37,6 @@ export default class Document extends React.Component {
               }
             `}
           </style>
-          {/** here is where we put our Styled Components styleTags... */}
           {styleTags}
         </head>
         <body {...bodyAttrs}>
