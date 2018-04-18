@@ -49,7 +49,11 @@ npm run start
 * [x] Great developer experience
 * [x] ES6, ES7, ES8...
 * [x] Server-side rendering
-* [x] Top-notch performance (bundling, tree shaking, critical CSS)
+* [x] Top-notch performance
+* [ ] ➡️ Bundling
+* [ ] ➡️ Tree shaking
+* [x] ➡️ Code splitting
+* [x] ➡️ Critical CSS
 * [x] gzip
 * [ ] HTTP/2
 * [ ] AMP
