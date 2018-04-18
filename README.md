@@ -21,6 +21,12 @@ npm run dev
 > You might get an error about build/assets.json. You can safely ignore this for now.
 > Razzle 2.0 is currently being developed and errors like this may occur.
 
+### First time setup
+
+Setup your NODE_ENV
+
+* Add `export NODE_ENV=development` to your ~/.bash_profile
+
 ## How to run tests
 
 ```bash
@@ -44,7 +50,8 @@ npm run start
 * [x] ES6, ES7, ES8...
 * [x] Server-side rendering
 * [x] Top-notch performance (bundling, tree shaking, critical CSS)
-* [-] gzip + HTTP/2
+* [x] gzip
+* [ ] HTTP/2
 * [ ] AMP
 * [ ] Progressive Web App (Service Worker)
 * [ ] Internationalization & Localization

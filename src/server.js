@@ -26,8 +26,14 @@ server.get('/*', async (req, res) => {
     });
     res.send(html);
   } catch (error) {
-    res.json(error);
+    console.error('Error occurred on server-rendering', error);
+    res.status(500).json({
+      message: 'Error occurred. See server log for details.',
+      error
+    });
   }
 });
 
+const { PORT } = process.env;
+console.log(`💻 Server started on port ${PORT} ➡️  http://localhost:${PORT}`);
 export default server;
