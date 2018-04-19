@@ -1,9 +1,15 @@
 import express from 'express';
 import compression from 'compression';
 import { render } from '@jaredpalmer/after';
+import React from 'react';
+import { renderToString } from 'react-dom/server';
 import Document from './Document';
+import { IntlProvider, addLocaleData } from 'react-intl';
+import enLocaleData from 'react-intl/locale-data/en';
+import enMessages from './i18n/en.json';
 import routes from './routes';
 
+addLocaleData(enLocaleData);
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
 const server = express();
@@ -13,12 +19,22 @@ server.use(express.static(process.env.RAZZLE_PUBLIC_DIR));
 
 server.get('/*', async (req, res) => {
   try {
+    const customRenderer = node => {
+      const appNode = (
+        <IntlProvider locale="en" messages={enMessages}>
+          {node}
+        </IntlProvider>
+      );
+      const html = renderToString(appNode);
+      return { html };
+    };
     const html = await render({
       req,
       res,
       document: Document,
       routes,
       assets,
+      customRenderer,
       // Anything else you add here will be made available
       // within getInitialProps(ctx)
       // e.g a redux store...
@@ -34,6 +50,4 @@ server.get('/*', async (req, res) => {
   }
 });
 
-const { PORT } = process.env;
-console.log(`💻 Server started on port ${PORT} ➡️  http://localhost:${PORT}`);
 export default server;

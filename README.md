@@ -56,9 +56,9 @@ npm run start
 * [x] ➡️ Critical CSS
 * [x] gzip
 * [ ] HTTP/2
+* [x] Internationalization & Localization
 * [ ] AMP
 * [ ] Progressive Web App (Service Worker)
-* [ ] Internationalization & Localization
 * [ ] Great logging and error handling
 * [ ] Easy deployment
 

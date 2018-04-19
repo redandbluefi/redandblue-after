@@ -10,7 +10,8 @@ server.listen(process.env.PORT || 3000, error => {
     console.log(error);
   }
 
-  console.log('🚀 started');
+  const { PORT } = process.env;
+  console.log(`🚀 Server started on port ${PORT} ➡️  http://localhost:${PORT}`);
 });
 
 if (module.hot) {
