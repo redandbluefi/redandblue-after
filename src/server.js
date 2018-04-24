@@ -1,5 +1,6 @@
 import express from 'express';
 import compression from 'compression';
+import helmet from 'helmet';
 import { render } from '@jaredpalmer/after';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
@@ -14,6 +15,7 @@ const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
 const server = express();
 server.use(compression());
+server.use(helmet());
 server.disable('x-powered-by');
 server.use(express.static(process.env.RAZZLE_PUBLIC_DIR));
 
