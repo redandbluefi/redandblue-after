@@ -38,6 +38,11 @@ export default class Document extends React.Component {
             `}
           </style>
           {styleTags}
+          {/*
+            This can be used to Polyfill Intl on browsers to support Internationalization. Only needed on older browsers.
+            See more here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#Browser_compatibility
+            <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en,Intl.~locale.fi" />
+          */}
         </head>
         <body {...bodyAttrs}>
           <AfterRoot />
