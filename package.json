@@ -9,7 +9,8 @@
     "build": "razzle build",
     "test": "razzle test --env=jsdom --coverage",
     "prettify": "prettier src/** --write",
-    "precommit": "pretty-quick --staged && nsp check"
+    "precommit": "pretty-quick --staged && nsp check",
+    "check": "nsp check"
   },
   "dependencies": {
     "@jaredpalmer/after": "latest",
