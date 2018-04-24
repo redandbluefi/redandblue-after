@@ -47,7 +47,7 @@ npm start
 ## Features
 
 * [x] Great developer experience
-* [x] ES6, ES7, ES8...
+* [x] Universal ES6, ES7, ES8...
 * [x] Server-side rendering
 * [x] Top-notch performance
 * [ ] ➡️ Bundling
@@ -56,14 +56,37 @@ npm start
 * [x] ➡️ Critical CSS
 * [x] gzip
 * [ ] HTTP/2
-* [x] Internationalization & Localization
+* [x] Internationalization & Localization (see `docs/Internationalization.md`)
 * [ ] AMP
 * [ ] Progressive Web App (Service Worker)
 * [ ] Great logging and error handling
 * [ ] Easy deployment
+
+## Recommended development tools
+
+Some tools that work well with this setup and make development easier. All optional, but highly recommended.
+
+* Google Chrome
+  * Chrome's developer tool (F12) :blue_heart:
+  * Postman (Chrome application)
+    * For manual testing of APIs
+  * React (Chrome plugin)
+  * Redux (Chrome plugin)
+  * JSON Viewer (Chrome plugin)
+  * Gliffy diagrams (Chrome application)
+* Atom
+  * language-babel (Plugin)
+  * Markdown Preview Plus (Plugin)
+  * Color picker (Plugin)
+  * file-icons (Plugin)
+  * autocomplete-emojis (Plugin)
 
 ## How to customize this setup
 
 This setup is based on Razzle, which provides pre-configured everything.
 However, those everything can also be customized. See details on
 [jaredpalmer/razzle](https://github.com/jaredpalmer/razzle).
+
+## Credits
+
+Big thanks to open source community! :octocat:
