@@ -2,23 +2,24 @@ import React from 'react';
 import { hydrate } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { IntlProvider, addLocaleData } from 'react-intl';
-import enLocaleData from 'react-intl/locale-data/en';
 import { ensureReady, After } from '@jaredpalmer/after';
+import { determineClientLocale, getLocaleData } from './utils/locale';
 import routes from './routes';
-import enMessages from './i18n/en.json';
 
-addLocaleData(enLocaleData);
+ensureReady(routes).then(data => {
+  const localeCode = determineClientLocale();
+  const locale = getLocaleData(localeCode);
+  addLocaleData(locale.data);
 
-ensureReady(routes).then(data =>
-  hydrate(
-    <IntlProvider locale="en" messages={enMessages}>
-      <BrowserRouter>
+  return hydrate(
+    <IntlProvider locale={localeCode} messages={locale.messages}>
+      <BrowserRouter basename={`/${localeCode}/`}>
         <After data={data} routes={routes} />
       </BrowserRouter>
     </IntlProvider>,
     document.getElementById('root')
-  )
-);
+  );
+});
 
 if (module.hot) {
   module.hot.accept();
