@@ -3,6 +3,7 @@ import fiLocaleData from 'react-intl/locale-data/fi';
 import enMessages from '../i18n/en.json';
 import fiMessages from '../i18n/fi.json';
 
+// Modify this to add/remove locales from the application
 const LOCALE_DATA = {
   en: {
     data: enLocaleData,
