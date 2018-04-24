@@ -9,7 +9,7 @@
     "build": "razzle build",
     "test": "razzle test --env=jsdom --coverage",
     "prettify": "prettier src/** --write",
-    "precommit": "pretty-quick --staged"
+    "precommit": "pretty-quick --staged && nsp check"
   },
   "dependencies": {
     "@jaredpalmer/after": "latest",
@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "husky": "^0.14.3",
+    "nsp": "^3.2.1",
     "prettier": "1.11.1",
     "pretty-quick": "^1.4.1",
     "react-test-renderer": "^16.3.2"

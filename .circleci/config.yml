@@ -23,6 +23,9 @@ jobs:
           name: Run tests
           command: npm test
       - run:
+          name: Check dependencies
+          command: nsp check
+      - run:
           name: Build production version
           command: npm run build
   deploy:
