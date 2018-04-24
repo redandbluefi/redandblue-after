@@ -2,6 +2,11 @@
   "name": "redandblue-after",
   "version": "0.1.0",
   "license": "MIT",
+  "author": "Red & Blue <dev@redandblue.fi>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redandbluefi/redandblue-after"
+  },
   "scripts": {
     "dev": "razzle start",
     "prestart": "npm run build",

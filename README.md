@@ -41,7 +41,7 @@ More details here: https://prettier.io/docs/en/editors.html
 ## How to run production build and server
 
 ```bash
-npm run start
+npm start
 ```
 
 ## Features
