@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
+import Helmet from 'react-helmet';
 import Header from '../components/Header/Header';
 
 class Home extends Component {
@@ -10,6 +11,7 @@ class Home extends Component {
   render() {
     return (
       <div>
+        <Helmet title="Homepage title" />
         <Header />
         <h1>
           <FormattedMessage id="page.home" defaultMessage="Homepage" />

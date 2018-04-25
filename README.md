@@ -56,6 +56,7 @@ npm start
 * [x] ➡️ Critical CSS
 * [x] gzip
 * [ ] HTTP/2
+* [ ] Font Awesome
 * [x] Internationalization & Localization (see `docs/Internationalization.md`)
 * [ ] AMP
 * [ ] Progressive Web App (Service Worker)
