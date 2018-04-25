@@ -1,7 +1,6 @@
-
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { MemoryRouter } from 'react-router-dom'
+import { MemoryRouter } from 'react-router-dom';
 import HeaderComponent from './Header';
 
 // We need to wrap the original Header with 'MemoryRouter'

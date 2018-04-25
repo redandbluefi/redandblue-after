@@ -13,6 +13,8 @@
     "start": "NODE_ENV=production node build/server.js",
     "build": "razzle build",
     "test": "razzle test --env=jsdom --coverage",
+    "test:watch": "razzle test --env=jsdom --watch",
+    "test:e2e": "razzle test -- test/e2e/",
     "prettify": "prettier src/** --write",
     "precommit": "pretty-quick --staged && nsp check",
     "check": "nsp check"
@@ -33,6 +35,7 @@
   },
   "devDependencies": {
     "husky": "^0.14.3",
+    "nightmare": "^3.0.1",
     "nsp": "^3.2.1",
     "prettier": "1.11.1",
     "pretty-quick": "^1.4.1",
