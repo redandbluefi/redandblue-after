@@ -23,9 +23,9 @@
     "@jaredpalmer/after": "latest",
     "compression": "^1.7.2",
     "express": "^4.16.2",
-    "helmet": "^3.12.0",
+    "helmet": "^3.12.1",
     "node-fetch": "^2.1.2",
-    "razzle": "^2.0.0-alpha.11",
+    "razzle": "^2.0.0-alpha.12",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-helmet": "^5.2.0",
@@ -38,7 +38,7 @@
     "nightmare": "^3.0.1",
     "nsp": "^3.2.1",
     "prettier": "1.11.1",
-    "pretty-quick": "^1.4.1",
+    "pretty-quick": "^1.5.0",
     "react-test-renderer": "^16.3.2"
   },
   "engines": {
