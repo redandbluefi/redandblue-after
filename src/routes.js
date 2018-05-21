@@ -5,17 +5,17 @@ import About from './pages/About';
 
 export default [
   {
-    path: '/',
+    path: '/:locale/',
     exact: true,
     component: Home
   },
   {
-    path: '/about',
+    path: '/:locale/about',
     exact: true,
     component: About
   },
   {
-    path: '/terms',
+    path: '/:locale/terms',
     exact: true,
     component: asyncComponent({
       loader: () => import('./pages/Terms'), // required

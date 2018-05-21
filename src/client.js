@@ -13,7 +13,7 @@ ensureReady(routes).then(data => {
 
   return hydrate(
     <IntlProvider locale={localeCode} messages={locale.messages}>
-      <BrowserRouter basename={`/${localeCode}/`}>
+      <BrowserRouter>
         <After data={data} routes={routes} />
       </BrowserRouter>
     </IntlProvider>,

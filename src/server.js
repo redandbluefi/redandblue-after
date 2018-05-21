@@ -33,6 +33,7 @@ server.get('/*', async (req, res) => {
         </IntlProvider>
       );
       const html = renderToString(appNode);
+      console.log('HTML', html);
       return { html };
     };
     const html = await render({
