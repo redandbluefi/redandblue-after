@@ -5,7 +5,7 @@ import logo from './logo.svg';
 
 const Container = styled.div`
   text-align: center;
-  background-color: #DDD;
+  background-color: ${props => props.theme.secondary};
   padding: 20px;
   color: #555;
 `;
@@ -13,7 +13,12 @@ const Container = styled.div`
 const Header = () => (
   <div>
     <Container>
-      <img src={logo} className="Header-logo" alt="logo" style={{ height: '80px' }}/>
+      <img
+        src={logo}
+        className="Header-logo"
+        alt="logo"
+        style={{ height: '80px' }}
+      />
       <h2>Welcome to redandblue frontend starter</h2>
       <h3>Implemented with Razzle + After.js</h3>
     </Container>

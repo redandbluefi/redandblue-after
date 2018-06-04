@@ -6,8 +6,10 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import Document from './Document';
 import { IntlProvider, addLocaleData } from 'react-intl';
+import { ThemeProvider } from 'styled-components';
 import { determineLocale, getLocaleData } from './utils/locale';
 import routes from './routes';
+import theme from './theme';
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
@@ -29,7 +31,7 @@ server.get('/*', async (req, res) => {
     const customRenderer = node => {
       const appNode = (
         <IntlProvider locale={localeCode} messages={locale.messages}>
-          {node}
+          <ThemeProvider theme={theme}>{node}</ThemeProvider>
         </IntlProvider>
       );
       const html = renderToString(appNode);
