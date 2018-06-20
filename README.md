@@ -74,6 +74,7 @@ npm start
 * Error handling
 * Service worker
 * Proper Helmet Setup
+* Add tests
 
 ## Recommended development tools
 
