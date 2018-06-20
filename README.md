@@ -61,15 +61,17 @@ npm start
 * [ ] AMP
 * [ ] Progressive Web App (Service Worker)
 * [ ] Great logging and error handling
-* [ ] Easy deployment
+* [x] Environment-specific configurations
+* [x] Easy deployment
 
 ## TODO Before Kuluttaja
 
+* App wrapper (see example on RND) - Check if there's other stuff to copy from RND as well
 * Service worker
 * Redux
-* App wrapper (see example on RND) - Check if there's other stuff to copy from RND as well
 * Error handling
 * GraphQL?
+* Proper Helmet Setup
 
 ## Recommended development tools
 
