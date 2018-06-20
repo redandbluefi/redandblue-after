@@ -58,7 +58,7 @@ npm start
 * [ ] HTTP/2
 * [x] Internationalization & Localization (see `docs/Internationalization.md`)
 * [ ] Progressive Web App (Service Worker)
-* [ ] Great logging and error handling
+* [x] Error handling
 * [x] Environment-specific configurations
 * [x] Easy deployment
 
@@ -68,10 +68,10 @@ npm start
 * [ ] AMP
 * [ ] Redux
 * [ ] GraphQL
+* [ ] Improved logging
 
 ## TODO Before Kuluttaja
 
-* Error handling
 * Service worker
 * Proper Helmet Setup
 * Add tests

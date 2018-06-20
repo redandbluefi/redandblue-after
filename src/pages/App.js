@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Header from '../components/Header/Header';
+import ErrorBoundary from '../containers/ErrorBoundary/ErrorBoundary';
 
 class App extends Component {
   static propTypes = {
@@ -28,7 +29,7 @@ class App extends Component {
       <div className={onFrontpage ? 'frontpage' : ''}>
         <Header />
         <pre>SiteData: {JSON.stringify(siteData)}</pre>
-        <div>{this.props.children}</div>
+        <ErrorBoundary>{this.props.children}</ErrorBoundary>
         <h2>INSERT FOOTER HERE</h2>
       </div>
     );
