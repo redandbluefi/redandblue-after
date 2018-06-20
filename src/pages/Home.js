@@ -3,7 +3,6 @@ import { FormattedMessage } from 'react-intl';
 import Helmet from 'react-helmet';
 import fetch from 'node-fetch';
 
-import Header from '../components/Header/Header';
 import config from '../config';
 
 class Home extends Component {
@@ -23,7 +22,6 @@ class Home extends Component {
     return (
       <div>
         <Helmet title="Homepage title" />
-        <Header />
         <h1>
           <FormattedMessage id="page.home" defaultMessage="Homepage" />
         </h1>

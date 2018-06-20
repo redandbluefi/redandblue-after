@@ -56,21 +56,23 @@ npm start
 * [x] ➡️ Critical CSS
 * [x] gzip
 * [ ] HTTP/2
-* [ ] Font Awesome
 * [x] Internationalization & Localization (see `docs/Internationalization.md`)
-* [ ] AMP
 * [ ] Progressive Web App (Service Worker)
 * [ ] Great logging and error handling
 * [x] Environment-specific configurations
 * [x] Easy deployment
 
+### Additional we could consider adding
+
+* [ ] Font Awesome
+* [ ] AMP
+* [ ] Redux
+* [ ] GraphQL
+
 ## TODO Before Kuluttaja
 
-* App wrapper (see example on RND) - Check if there's other stuff to copy from RND as well
-* Service worker
-* Redux
 * Error handling
-* GraphQL?
+* Service worker
 * Proper Helmet Setup
 
 ## Recommended development tools

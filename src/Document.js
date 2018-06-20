@@ -1,6 +1,7 @@
 import React from 'react';
 import { ServerStyleSheet } from 'styled-components';
 import { AfterRoot, AfterData } from '@jaredpalmer/after';
+import serialize from 'serialize-javascript';
 
 export default class Document extends React.Component {
   static async getInitialProps({ assets, data, renderPage }) {
@@ -13,7 +14,7 @@ export default class Document extends React.Component {
   }
 
   render() {
-    const { helmet, assets, data, styleTags } = this.props;
+    const { helmet, assets, data, initialData, styleTags } = this.props;
     const htmlAttrs = helmet.htmlAttributes.toComponent();
     const bodyAttrs = helmet.bodyAttributes.toComponent();
 
@@ -47,6 +48,12 @@ export default class Document extends React.Component {
         <body {...bodyAttrs}>
           <AfterRoot />
           <AfterData data={data} />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.__data=${serialize(initialData)};`
+            }}
+            charSet="UTF-8"
+          />
           <script
             type="text/javascript"
             src={assets.client.js}
