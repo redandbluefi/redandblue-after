@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import Helmet from 'react-helmet';
 import fetch from 'node-fetch';
-
 import config from '../config';
 
 class Home extends Component {

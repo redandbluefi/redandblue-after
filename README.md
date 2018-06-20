@@ -73,7 +73,6 @@ npm start
 ## TODO Before Kuluttaja
 
 * Service worker
-* Proper Helmet Setup
 * Add tests
 
 ## Recommended development tools

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 import Header from '../components/Header/Header';
 import ErrorBoundary from '../containers/ErrorBoundary/ErrorBoundary';
+import config from '../config';
 
 class App extends Component {
   static propTypes = {
@@ -27,6 +29,7 @@ class App extends Component {
 
     return (
       <div className={onFrontpage ? 'frontpage' : ''}>
+        <Helmet {...config.app.head} />
         <Header />
         <pre>SiteData: {JSON.stringify(siteData)}</pre>
         <ErrorBoundary>{this.props.children}</ErrorBoundary>
