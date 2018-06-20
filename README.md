@@ -50,8 +50,8 @@ npm start
 * [x] Universal ES6, ES7, ES8...
 * [x] Server-side rendering
 * [x] Top-notch performance
-* [ ] ➡️ Bundling
-* [ ] ➡️ Tree shaking
+* [x] ➡️ Bundling
+* [x] ➡️ Tree shaking
 * [x] ➡️ Code splitting
 * [x] ➡️ Critical CSS
 * [x] gzip
@@ -62,6 +62,14 @@ npm start
 * [ ] Progressive Web App (Service Worker)
 * [ ] Great logging and error handling
 * [ ] Easy deployment
+
+## TODO Before Kuluttaja
+
+* Service worker
+* Redux
+* App wrapper (see example on RND) - Check if there's other stuff to copy from RND as well
+* Error handling
+* GraphQL?
 
 ## Recommended development tools
 
