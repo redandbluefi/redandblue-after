@@ -6,7 +6,7 @@ class Terms extends Component {
   render() {
     return (
       <div>
-        <Helmet title="Terms page" />
+        <Helmet title="Terms" />
         <h1>
           <FormattedMessage id="page.terms" defaultMessage="Terms" />
         </h1>

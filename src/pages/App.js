@@ -26,10 +26,11 @@ class App extends Component {
       onFrontpage =
         isFrontpage || window.location.pathname === `/${localeCode}/`;
     }
+    const localeConfig = config[localeCode];
 
     return (
       <div className={onFrontpage ? 'frontpage' : ''}>
-        <Helmet {...config.app.head} />
+        <Helmet {...localeConfig.head} />
         <Header />
         <pre>SiteData: {JSON.stringify(siteData)}</pre>
         <ErrorBoundary>{this.props.children}</ErrorBoundary>

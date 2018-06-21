@@ -43,7 +43,11 @@ server.get('/*', async (req, res) => {
         <IntlProvider locale={localeCode} messages={locale.messages}>
           <ThemeProvider theme={theme}>
             <StaticRouter location={req.url} context={context}>
-              <App siteData={initialData} isFrontpage={isFrontpage}>
+              <App
+                siteData={initialData}
+                localeCode={localeCode}
+                isFrontpage={isFrontpage}
+              >
                 {node}
               </App>
             </StaticRouter>

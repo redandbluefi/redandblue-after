@@ -7,7 +7,7 @@ import config from '../config';
 class Home extends Component {
   static async getInitialProps({ req, res, match, history, location, ...ctx }) {
     try {
-      const response = await fetch(`${config.apiHost}/posts/1`);
+      const response = await fetch(`${config.app.apiHost}/posts/1`);
       const post = await response.json();
       return { post };
     } catch (err) {
@@ -20,7 +20,7 @@ class Home extends Component {
     const { post = {}, err = {} } = this.props;
     return (
       <div>
-        <Helmet title="Homepage title" />
+        <Helmet title="Home" />
         <h1>
           <FormattedMessage id="page.home" defaultMessage="Homepage" />
         </h1>
