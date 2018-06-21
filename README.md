@@ -18,14 +18,12 @@ npm install
 npm run dev
 ```
 
-> You might get an error about build/assets.json. You can safely ignore this for now.
-> Razzle 2.0 is currently being developed and errors like this may occur.
-
 ### First time setup
 
-Setup your NODE_ENV
-
-* Add `export NODE_ENV=development` to your ~/.bash_profile
+* Install **Prettier** plugin to your text editor!
+  * More details: https://prettier.io/docs/en/editors.html
+* Setup your NODE_ENV
+  * e.g. Add `export NODE_ENV=development` to your ~/.bash_profile
 
 ## How to run tests
 
@@ -35,8 +33,6 @@ npm test
 
 Project also includes Prettier, which automatically formats your code on each commit.
 You can also run it manually with `npm run prettify`.
-It is recommended that you also install Prettier plugin to your favourite editor.
-More details here: https://prettier.io/docs/en/editors.html
 
 ## How to run production build and server
 
@@ -55,25 +51,20 @@ npm start
 * [x] ➡️ Code splitting
 * [x] ➡️ Critical CSS
 * [x] gzip
-* [ ] HTTP/2
 * [x] Internationalization & Localization (see `docs/Internationalization.md`)
-* [ ] Progressive Web App (Service Worker)
+* [x] Progressive Web App (Service Worker)
 * [x] Error handling
 * [x] Environment-specific configurations
 * [x] Easy deployment
 
 ### Additional we could consider adding
 
+* [ ] HTTP/2
 * [ ] Font Awesome
-* [ ] AMP
+* [ ] AMP (Accelerated Mobile Pages)
 * [ ] Redux
 * [ ] GraphQL
 * [ ] Improved logging
-
-## TODO Before Kuluttaja
-
-* Service worker
-* Add tests
 
 ## Recommended development tools
 

@@ -6,12 +6,18 @@ import { ensureReady, After } from '@jaredpalmer/after';
 import { ThemeProvider } from 'styled-components';
 import App from './pages/App';
 import { determineClientLocale, getLocaleData } from './utils/locale';
+import registerServiceWorker from './utils/service-worker';
 import routes from './routes';
 import theme from './theme';
 
 const localeCode = determineClientLocale();
 const locale = getLocaleData(localeCode);
 addLocaleData(locale.data);
+
+// Register the service worker for cache and offline functionality
+if (process.env.NODE_ENV !== 'development') {
+  registerServiceWorker({ localeCode });
+}
 
 const siteData = window.__data || {};
 
