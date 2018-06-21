@@ -9,13 +9,13 @@ import { determineClientLocale, getLocaleData } from './utils/locale';
 import routes from './routes';
 import theme from './theme';
 
+const localeCode = determineClientLocale();
+const locale = getLocaleData(localeCode);
+addLocaleData(locale.data);
+
+const siteData = window.__data || {};
+
 ensureReady(routes).then(data => {
-  const localeCode = determineClientLocale();
-  const locale = getLocaleData(localeCode);
-  addLocaleData(locale.data);
-
-  const siteData = window.__data || {};
-
   return hydrate(
     <IntlProvider locale={localeCode} messages={locale.messages}>
       <ThemeProvider theme={theme}>
