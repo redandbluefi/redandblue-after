@@ -23,31 +23,25 @@ exports[`renders Header correctly 1`] = `
     </h3>
   </div>
   <a
-    aria-current={false}
-    className={undefined}
+    aria-current={null}
     href="/en/"
     onClick={[Function]}
-    style={undefined}
   >
     Home
   </a>
    -
   <a
-    aria-current={false}
-    className={undefined}
+    aria-current={null}
     href="/en/about"
     onClick={[Function]}
-    style={undefined}
   >
     About
   </a>
    -
   <a
-    aria-current={false}
-    className={undefined}
+    aria-current={null}
     href="/en/terms"
     onClick={[Function]}
-    style={undefined}
   >
     Terms
   </a>
