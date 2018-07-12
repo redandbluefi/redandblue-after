@@ -10,6 +10,7 @@ const LocalizedLink = props => {
       activeStyle={{
         borderBottom: '2px solid #ffca05'
       }}
+      exact
       to={`/${locale}${to}`}
       {...rest}
     >

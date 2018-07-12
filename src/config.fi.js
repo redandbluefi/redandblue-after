@@ -28,6 +28,12 @@ export default {
       { property: 'og:image:width', content: '200' },
       { property: 'og:image:height', content: '200' }
     ],
-    link: [{ rel: 'manifest', href: '/manifest.fi.json' }]
+    link: [
+      { rel: 'manifest', href: '/manifest.fi.json' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Roboto'
+      }
+    ]
   }
 };

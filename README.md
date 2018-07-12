@@ -57,7 +57,7 @@ npm start
 * [x] Environment-specific configurations
 * [x] Easy deployment
 
-### Additional we could consider adding
+### Additional we could consider adding (or should be easy to add per project)
 
 * [ ] HTTP/2
 * [ ] Font Awesome
