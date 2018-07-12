@@ -21,7 +21,8 @@ server.use(helmet());
 server.disable('x-powered-by');
 server.use(express.static(process.env.RAZZLE_PUBLIC_DIR));
 
-// NOTE Add / load static data here. This will be along inside the application
+// NOTE Add / load static data here. This will be passed to the application
+// e.g. a header and footer from CMS could be loaded here
 const initialData = { hello: 'world!' };
 
 server.get('/*', async (req, res) => {

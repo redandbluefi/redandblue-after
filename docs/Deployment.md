@@ -1,5 +1,8 @@
 # Deploying with Docker (example)
 
+First, check all environment variables in `.env.staging` & `.env.production`.
+Add / remove accordingly.
+
 ## Locally (or CI)
 
 1.  Build the Docker image: `docker build -t redandblue/redandblue-after . --no-cache [--build-arg environment=production]`
