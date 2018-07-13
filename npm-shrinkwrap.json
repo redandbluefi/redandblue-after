@@ -154,6 +154,11 @@
         "serialize-javascript": "^1.5.0"
       }
     },
+    "@redandblue/utils": {
+      "version": "0.1.3",
+      "resolved": "https://registry.npmjs.org/@redandblue/utils/-/utils-0.1.3.tgz",
+      "integrity": "sha512-UD/ZAlp9NnbPeHbi2zSsk3zgK1pBLk/wfMUXrGvMzQJG6066v4tATCAG6hmuw6mN9yw6cwoHtAjkCGZhxxc9Wg=="
+    },
     "@types/node": {
       "version": "8.10.9",
       "resolved": "https://registry.npmjs.org/@types/node/-/node-8.10.9.tgz",
