@@ -42,7 +42,7 @@
     "react-test-renderer": "^16.7.0"
   },
   "engines": {
-    "node": "9.x"
+    "node": "10.x"
   },
   "husky": {
     "hooks": {
