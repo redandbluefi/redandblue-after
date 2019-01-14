@@ -16,7 +16,7 @@
     "test:watch": "razzle test --env=jsdom --watch",
     "test:e2e": "razzle test -- test/e2e/",
     "prettify": "prettier src/** --write",
-    "precommit": "pretty-quick --staged"
+    "precommit": "pretty-quick --staged && npm audit"
   },
   "dependencies": {
     "@jaredpalmer/after": "latest",
