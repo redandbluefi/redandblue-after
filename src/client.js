@@ -21,6 +21,10 @@ if (process.env.NODE_ENV !== 'development') {
 
 const siteData = window.__data || {};
 
+// Monkey-patch window.scrollTo, see https://github.com/jaredpalmer/after.js/blob/57301bbb6a7103fc5438972b484fd9c747a8d7be/src/After.tsx#L38
+// We should fork and make a PR so that After.js scrollTo could be controlled e.g. via props
+window.scrollTo = () => {};
+
 ensureReady(routes).then(data => {
   return hydrate(
     <IntlProvider locale={localeCode} messages={locale.messages}>
