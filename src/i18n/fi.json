@@ -1,4 +1,6 @@
 {
   "page.home": "Kotisivu",
-  "page.terms": "Terms page"
+  "page.terms": "Terms page",
+
+  "label.loading": "Ladataan..."
 }

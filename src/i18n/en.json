@@ -1,4 +1,6 @@
 {
   "page.home": "Homepage",
-  "page.terms": "Terms page"
+  "page.terms": "Terms page",
+
+  "label.loading": "Loading..."
 }
