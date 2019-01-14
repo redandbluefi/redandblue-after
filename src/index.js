@@ -1,7 +1,19 @@
 import app from './server';
 import http from 'http';
+import https from 'https';
+import fs from 'fs';
 
-const server = http.createServer(app);
+const useHttps =
+  fs.existsSync('tmp/server.key') && fs.existsSync('tmp/server.cert');
+const server = useHttps
+  ? https.createServer(
+      {
+        key: fs.readFileSync('tmp/server.key'),
+        cert: fs.readFileSync('tmp/server.cert')
+      },
+      app
+    )
+  : http.createServer(app);
 
 let currentApp = app;
 

@@ -22,3 +22,5 @@ Our development environment does not fully support this, so HTTP is encouraged f
 (e.g. hot reloading doesn't seem to work yet under HTTPS)
 
 This is also self-signed certificate and is not trusted, so you'll need to add the exception in browser.
+
+Functionality for HTTPS has been setup in `src/index.js`.
