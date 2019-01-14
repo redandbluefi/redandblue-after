@@ -15,8 +15,7 @@
     "test": "razzle test --env=jsdom --coverage",
     "test:watch": "razzle test --env=jsdom --watch",
     "test:e2e": "razzle test -- test/e2e/",
-    "prettify": "prettier src/** --write",
-    "precommit": "pretty-quick --staged && npm audit"
+    "prettify": "prettier src/** --write"
   },
   "dependencies": {
     "@jaredpalmer/after": "latest",
@@ -43,5 +42,10 @@
   },
   "engines": {
     "node": "9.x"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm audit"
+    }
   }
 }
