@@ -8,9 +8,9 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
       - run:
           name: Install dependencies
           command: npm prune && npm install
@@ -22,11 +22,11 @@ jobs:
       - run:
           name: Run tests
           command: npm test
-#      - store_artifacts:
-#          path: coverage/
+      #      - store_artifacts:
+      #          path: coverage/
       - run:
           name: Check dependencies
-          command: npm run check
+          command: npm audit
       - run:
           name: Build production version
           command: npm run build
